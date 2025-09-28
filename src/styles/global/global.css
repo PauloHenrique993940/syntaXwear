@@ -1,2 +1,7 @@
 @import url('../global/reset.css');
 @import url('../global/font.css');
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background: linear-gradient(to bottom, #f7f3f0, #ffffff);
+}
