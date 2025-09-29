@@ -13,7 +13,7 @@
   padding: 12px 20px;
 }
 .logo img{
-  height: 48px;
+  font-size:20px;
 }
 .nav-center ul {
   display: flex;
@@ -24,6 +24,7 @@
 .nav-center a,
 .nav-rigth a{
   font-size: 1.25rem;
+  color: #141414;
 }
 
 .nav-center a:hover,
