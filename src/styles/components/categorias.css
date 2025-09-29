@@ -1,0 +1,71 @@
+/* Estilos para a seção de categorias de tênis */
+.categorias-tenis {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.categoria-card{
+  width: 317px;
+  height: 500px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+  border: 2.5px solid transparent;
+  transition: box-shadow 0.25s, transform 0.22s, border-color 0.22s, filter 0.18s;
+  overflow: hidden;
+}
+.categoria-card:hover {
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,0.16);
+  transform: translateY(-6px) scale(1.035);
+  z-index: 2;
+  border: 2.5px solid transparent;
+}
+
+
+.categoria-card.casual {
+  border: 2.5px solid #a259ff;
+  box-shadow: 0 2px 8px 0 rgba(162,89,255,0.10);
+}
+.categoria-card.casual:hover {
+  border-color: #a259ff;
+  box-shadow: 0 8px 32px 0 rgba(117, 113, 122, 0.18);
+  filter: brightness(1.04);
+}
+
+.categoria-name{
+  font-size: 1.25rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+  z-index: 2;
+}
+
+
+.casual{
+  background: url("../../assets/produtos/tenis1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.esporte{
+  background: url("../../assets/produtos/tenis2.jpg") no-repeat center;
+  background-size: cover;
+}
+.moderno{
+  background: url("../../assets/produtos/tenis3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.classico{
+  background: url("../../assets/produtos/tenis4.jpg") no-repeat center;
+  background-size: cover;
+}
