@@ -1,14 +1,16 @@
-# syntaXwear
+# SyntaxWear
 
-Este é um projeto de ecommerce para a venda de roupas e acessórios.
+Projeto de e-commerce para venda de roupas e acessórios, com foco em simplicidade e estilo.
 
 ## Funcionalidades
 
-*   Catálogo de produtos
-
+* Catálogo de produtos organizado por categorias
+* Página inicial com destaque de promoções
+* Layout responsivo para diferentes dispositivos
 
 ## Tecnologias Utilizadas
 
-*   HTML
-*   CSS
+* **HTML5** para a estrutura semântica
+* **CSS3** para estilização e responsividade
+
 
