@@ -4,7 +4,7 @@
   padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -69,3 +69,6 @@
   background: url("../../assets/produtos/tenis4.jpg") no-repeat center;
   background-size: cover;
 }
+
+
+/* Responsividade  header */

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./src/styles/components/hero.css">
   <link rel="stylesheet" href="./src/styles/components/categorias.css">
   <link rel="stylesheet" href="./src/styles/components/products-grid-section.css">
+  <link rel="stylesheet" href="./src/styles/components/footer.css">
 </head>
 
 <body>
@@ -27,36 +28,41 @@
         <img src="./src/assets/logo/logo.png" alt="Logo do site SyntaxWear">
       </a>
     </h1>
-    <nav class="nav-center" aria-label="Categorias Principais">
-      <ul>
-        <li><a href="#">Masculino</a></li>
-        <li><a href="#">Feminino</a></li>
-        <li><a href="#">Outlet</a></li>
-      </ul>
-    </nav>
 
-    <nav class="nav-rigth">
-      <ul>
-        <li><a href="#">Nossas lojas</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li>
-          <a href="#" class="icon-link">
-            <img src="./src/assets/icones/ícone.svg" alt="Usuário">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="icon-link">
-            <img src="./src/assets/icones/Vector (1).svg" alt="Ajuda">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="icon-link">
-            <img src="./src/assets/icones/Vector.svg" alt="Sacola">
-          </a>
-        </li>
-      </ul>
+    <!-- Botão para abrir/fechar o menu -->
+    <button class="menu-icon" aria-label="Abrir menu">
+      <img src="./src/assets/icones/Vector.png" alt="menu toggle">
+    </button>
+
+    <!-- Menu principal -->
+    <nav class="nav-container">
+      <div class="nav-center" aria-label="Categorias Principais">
+        <ul>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Feminino</a></li>
+          <li><a href="#">Outlet</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-rigth">
+        <ul>
+          <li><a href="#">Nossas lojas</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li>
+            <a href="#"><img src="./src/assets/icones/ícone.svg" alt="Usuário"></a>
+          </li>
+          <li>
+            <a href="#"><img src="./src/assets/icones/Vector (1).svg" alt="Ajuda"></a>
+          </li>
+          <li>
+            <a href="#"><img src="./src/assets/icones/Vector.svg" alt="Sacola"></a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
+
+
 
   <!-- Hero -->
   <main>
@@ -104,30 +110,117 @@
 
     <!-- Produtos -->
     <section class="products-grid-section">
-  <div class="card highlight">
-    <div class="top-content">
-      <h3 class="card-title">Krypton One</h3>
-      <p class="card-subtitle">Estilo urbano com atitude</p>
-      <div class="cta-group">
-        <a href="#" class="btn btn-outline">Feminino</a>
-        <a href="#" class="btn btn-filled">Masculino</a>
+      <div class="card highlight">
+        <div class="top-content">
+          <h3 class="card-title">Krypton One</h3>
+          <p class="card-subtitle">Estilo urbano com atitude</p>
+          <div class="cta-group">
+            <a href="#" class="btn btn-outline">Feminino</a>
+            <a href="#" class="btn btn-filled">Masculino</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="card sneaker-purple"></div>
-  <div class="card model"></div>
-  <div class="card sneaker-color"></div>
-  <div class="card sneaker-white"></div>
-  <div class="card sneaker-gray"></div>
-</section>
+      <div class="card sneaker-purple"></div>
+      <div class="card model"></div>
+      <div class="card sneaker-color"></div>
+      <div class="card sneaker-white"></div>
+      <div class="card sneaker-gray"></div>
+    </section>
 
 
     <!-- Rodapé -->
     <footer class="footer">
-      <!-- Conteúdo do footer será adicionado aqui -->
+      <section class="footer-content-img">
+        <section class="footer-col footer-newsletter">
+          <label for="newsletter-email" class="footer-label">Inscreva-se em nosso e-mail</label>
+          <input id="newsletter-email" type="email" placeholder="email@gmail.com" class="footer-input" />
+          <span class="footer-social-label">Redes sociais</span>
+          <ul class="footer-social-icons">
+            <li><a href="#" aria-label="Instagram"><img src="./src/assets/redes-sociais/instagran.svg"
+                  alt="Instagram"></a></li>
+            <li><a href="#" aria-label="WhatsApp"><img src="./src/assets/redes-sociais/whatshap.svg" alt="WhatsApp"></a>
+            </li>
+            <li><a href="#" aria-label="TikTok"><img src="./src/assets/redes-sociais/tiktok.svg" alt="TikTok"></a></li>
+            <li><a href="#" aria-label="Facebook"><img src="./src/assets/redes-sociais/facebook.svg" alt="Facebook"></a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-col footer-menu">
+          <span class="footer-menu-title">Masculino</span>
+          <ul>
+            <li>Casual</li>
+            <li>Esporte</li>
+            <li>Moderno</li>
+            <li>Futurista</li>
+          </ul>
+        </section>
+
+        <section class="footer-col footer-menu">
+          <span class="footer-menu-title">Feminino</span>
+          <ul>
+            <li>Casual</li>
+            <li>Esporte</li>
+            <li>Moderno</li>
+            <li>Futurista</li>
+          </ul>
+        </section>
+
+        <section class="footer-col footer-menu">
+          <span class="footer-menu-title">Outlet</span>
+          <ul>
+            <li>Masculino</li>
+            <li>Feminino</li>
+          </ul>
+        </section>
+
+        <section class="footer-col footer-menu">
+          <span class="footer-menu-title">Nossas lojas</span>
+          <ul>
+            <li>Loja física</li>
+            <li>Loja online</li>
+          </ul>
+        </section>
+
+        <section class="footer-col footer-menu">
+          <span class="footer-menu-title">Sobre</span>
+          <ul>
+            <li>Quem somos</li>
+            <li>Missão</li>
+          </ul>
+        </section>
+      </section>
+
+      <hr class="footer-divider" />
+
+      <section class="footer-copy-img">
+        <span>Copyright. All Rights Reserved</span>
+      </section>
     </footer>
+
+
   </main>
+
+
+  <script>
+
+
+    // Seleciona os elementos
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuBtn = document.querySelector('.menu-icon');
+      const navContainer = document.querySelector('.nav-container');
+      if (menuBtn && navContainer) {
+        menuBtn.addEventListener('click', () => {
+          navContainer.classList.toggle('active');
+        });
+      }
+    });
+
+
+
+
+  </script>
 </body>
 
 </html>
