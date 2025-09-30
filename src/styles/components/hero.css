@@ -1,33 +1,32 @@
-
 .hero-section {
-  position: relative; 
+  position: relative;
   background: url('../../assets/images/hero.jpg') no-repeat center;
   height: 70vh;
   background-size: cover;
-  background-color: #000; 
-  overflow: hidden; 
-  border-radius: 20px ;
+  background-color: #000;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 /* Overlay para sombra */
 .hero-section::after {
   content: "";
   position: absolute;
-  inset: 0; 
-  background: rgba(0, 0, 0, 0.5); 
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 
-.hero-overlay{
+.hero-overlay {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding:  0 6rem;
+  padding: 0 6rem;
 }
 
-.hero-content{
+.hero-content {
   color: #ffffff;
   max-width: 400px;
   display: flex;
@@ -37,21 +36,21 @@
 }
 
 
-.hero-content .hero-title{
+.hero-content .hero-title {
   font-size: 40px;
   margin-bottom: 40px;
   line-height: 36px;
   font-weight: lighter;
 }
 
-.hero-content .hero-subtitle{
+.hero-content .hero-subtitle {
   font-size: 1.25rem;
   font-weight: 400;
-  
+
 
 }
 
-.hero-buttons{
+.hero-buttons {
 
   display: flex;
 
@@ -59,7 +58,7 @@
 }
 
 
-.btn{
+.btn {
   font-size: 1.25rem;
   width: 161px;
   height: 48px;
@@ -73,21 +72,61 @@
 }
 
 
-.btn-outline{
+.btn-outline {
   border: 2px solid #ffffff;
   background: transparent;
   line-height: 23px;
 }
 
-.btn-filled{
+.btn-filled {
   background-color: #ffffff;
   color: #6329A2;
   line-height: 23px;
 }
-.btn-filled:hover{
+
+.btn-filled:hover {
   background-color: #686565;
   color: #ffffff;
 }
-.btn-outline:hover{
+
+.btn-outline:hover {
   background-color: #6329A2;
+}
+
+@media(max-width: 768px) {
+
+  .hero-section {
+    height: 660px;
+    background: url('../../assets/images/cardhero.jpg') no-repeat center;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    /* Ativa flexbox */
+    flex-direction: column;
+    /* Caso tenha título + botão */
+    justify-content: center;
+    /* Alinha no meio vertical */
+    align-items: center;
+    /* Alinha no meio horizontal */
+    text-align: center;
+    /* Centraliza texto */
+    color: #fff;
+    /* Deixa o texto visível na imagem */
+  }
+
+  .hero-overlay{
+    padding: 0;
+  }
+
+  .hero-content .hero-title{
+    font-size: 1.5rem;
+
+  }
+
+  .hero-content .hero-subtitle{
+    font-size: 1.25rem;
+  }
+
+
 }

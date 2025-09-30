@@ -2,6 +2,7 @@
 .highlight {
   grid-area: highlight;
   background-image: url('../../assets/images/hero.jpg');
+  background-position: center;
 }
 
 .card{
@@ -15,26 +16,32 @@
 .sneaker-purple {
   grid-area: sneaker-purple;
   background-image: url('../../assets/produtos/tenis-roxo.jpg');
+  background-position: center;
 }
 
 .model {
   grid-area: model;
   background-image: url('../../assets/produtos/mulher.png');
+  background-position: center;
 }
 
 .sneaker-color {
   grid-area: sneaker-color;
   background-image: url('../../assets/produtos/tenis-rosa-azul.png');
+  background-position: center;
 }
 
 .sneaker-white {
   grid-area: sneaker-white;
   background-image: url('../../assets/produtos/tenis-pretoazul.jpg');
+  background-position: center;
+  
 }
 
 .sneaker-gray {
   grid-area: sneaker-gray;
   background-image: url('../../assets/produtos/tenis-cinza.png');
+  background-position: center;
 }
 
 .products-grid-section {
@@ -76,3 +83,45 @@
   display: flex;
   gap: 10px;
 }
+
+
+@media (max-width: 768px) {
+  .categoria-card {
+    width: 100%;
+  }
+
+  .products-grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "highlight highlight"
+      "sneaker-purple sneaker-purple"
+      "model sneaker-gray"
+      "model sneaker-color"
+      "sneaker-white sneaker-white";
+    max-width: 100%;
+    gap: 15px;
+  }
+
+  /* Alturas mais suaves */
+  .highlight,
+  .model,
+  .sneaker-color,
+  .sneaker-white,
+  .sneaker-purple,
+  .sneaker-gray {
+    min-height: 300px; /* pode ajustar para 250px se quiser mais compacto */
+    width: 100%;
+  }
+
+
+  .products-grid-section .card {
+    background-size: cover; /* ocupa toda a área */
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    width: 100%;
+  }
+}
+
